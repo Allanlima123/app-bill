@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator app</title>
+
+    <!-- likes css -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- link favicon -->
+
+    <link rel="shortcut icon" href="./src/image/favicon-32x32.png" type="image/png">
+
+</head>
+<body>
+   <main class="box-main">
+    <section class="box-title">
+        <img src="./src/image/logo.svg" alt="Logo">
+    </section>
+    <section class="container-box">
+        <div class="dados_tip">
+            <form action="">
+                <div class="input-box">
+                    <label for="bill">Bill</label>
+                    <input type="number" id="bill" placeholder="0" step="0.00">
+                    <!-- <i class="fa fa-usd"></i> -->
+                </div>
+                <div class="input-box">
+                    <p class="Select_Tip">Select Tip %</p>
+                    <div class="buttons">
+                        <button value="5">5%</button>
+                        <button value="10">10%</button>
+                        <button value="15">15%</button>
+                        <button value="25">25%</button>
+                        <button value="50">50%</button>
+                        <input type="number" name="custom" id="custom" placeholder="Custom" value="">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="NumberOfPeople">Number of People</label>
+                    <input type="number" id="NumberOfPeople" placeholder="0">
+                    <!-- <i class="fa fa-usd"></i> -->
+                </div>
+            </form>
+        </div>
+
+        <div class="result_tip">
+            <div class="tip_amount">
+                <div class="descrition">
+                    <h5>Tip Amount</h5>
+                    <span>/Person</span>
+                </div>
+
+                <div class="total_tip">
+                    <span id="dollar_tip">
+                        <i class="fa fa-usd"></i>0.00
+                    </span>
+                </div>
+            </div>
+
+            <div class="total_with-tip">
+                <div class="descrition">
+                    <h5>Total</h5>
+                    <span>/Person</span>
+                </div>
+
+                <div class="total_tip">
+                    <span id="total_person">
+                        <i class="fa fa-usd"></i>0.00
+                    </span>
+                </div>
+
+            </div>
+
+            <button class="btn-resete">Reset</button>
+        </div>
+    </section>
+   </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

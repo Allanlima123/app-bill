@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: var(--font-main);
+    font-weight: 700;
+    border: none;
+}
+
+:root{
+    --font-main:"Space Mono", sans-serif;
+    --Very-dark-cyan: #00494d;
+    --Dark-grayish-cyan: #5e7a7d;
+    --Grayish-cyan: #7f9c9f;
+    --Light-grayish-cyan: #c5e4e7;
+    --Very-light-grayish-cyan: #f4fafa;
+    --White: #ffffff;
+    --Strong-cyan: #26c0ab;
+}
+
+html{
+    font-size: 62.5%;
+}

@@ -1,0 +1,164 @@
+body{
+    background: var(--Light-grayish-cyan);
+}
+
+.box-main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    max-width: 144rem;
+}
+
+.box-main .box-title{
+    margin-bottom: 5rem;
+}
+
+.box-main .container-box .dados_tip form{
+    padding: 1rem;
+}
+
+.box-main .container-box .dados_tip form .input-box label,
+.box-main .container-box .dados_tip form .input-box .Select_Tip{
+    display: block;
+    font-size: 1.3rem;
+    color: var(--Grayish-cyan);
+    padding-bottom: .7rem;
+}
+
+.box-main .container-box .dados_tip form .input-box input[type=number]{
+    width: 100%;
+    height: 4rem;
+    border-radius: 1rem;
+    background: var(--Very-light-grayish-cyan);
+    position: relative;
+    padding-left: 2rem;
+    text-align: right;
+    font-size: 2rem;
+    color: var(--Very-dark-cyan);
+    margin-bottom: 2rem;
+}
+
+.box-main .container-box .dados_tip form .input-box input::placeholder{
+    font-size: 2rem;
+    position: absolute;
+    right: 1.8rem;
+    top: .5rem;
+}
+
+.box-main .container-box .dados_tip form .input-box .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.box-main .container-box .dados_tip form .input-box .buttons button,
+.box-main .container-box .dados_tip form .input-box .buttons #custom{
+    width: 10rem;
+    height: 4rem;
+    background: var(--Very-dark-cyan);
+    border-radius: .5rem;
+    cursor: pointer;
+    color: var(--White);
+    font-size: 2rem;
+    transition: .7s linear;
+}
+
+.box-main .container-box .dados_tip form .input-box .buttons button:hover{
+    background: var(--Strong-cyan);
+}
+
+.box-main .container-box .dados_tip form .input-box .buttons #custom{
+    margin-top: 2rem;
+    color: var(--Strong-cyan);
+    background: var(--Very-light-grayish-cyan);
+}
+
+.box-main .container-box{
+    background-color: var(--White);
+    width: 55%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.box-main .container-box .result_tip{
+    background: var(--Very-dark-cyan);
+    position: relative;
+}
+
+.box-main .container-box .dados_tip,
+.box-main .container-box .result_tip{
+    width: 47%;
+    height: 35rem;
+    border-radius: 2rem;
+    margin: 0 .5rem;
+}
+
+.box-main .container-box .result_tip{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.box-main .container-box .result_tip .tip_amount{
+    margin-bottom: 3rem;
+}
+
+.box-main .container-box .result_tip .tip_amount,
+.box-main .container-box .result_tip .total_with-tip{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-main .container-box .result_tip .tip_amount .descrition,
+.box-main .container-box .result_tip .total_with-tip .descrition{
+    color: var(--White);
+}
+
+.box-main .container-box .result_tip .tip_amount .descrition h5,
+.box-main .container-box .result_tip .total_with-tip .descrition h5{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.box-main .container-box .result_tip .tip_amount .descrition span,
+.box-main .container-box .result_tip .total_with-tip .descrition span{
+    color: var(--Dark-grayish-cyan);
+}
+
+.box-main .container-box .result_tip .tip_amount .total_tip,
+.box-main .container-box .result_tip .total_with-tip .total_tip{
+    font-size: 2.8rem;
+    color: var(--Strong-cyan);
+}
+
+.box-main .container-box .result_tip .tip_amount .total_tip #dollar_tip i,
+.box-main .container-box .result_tip .total_with-tip .total_tip #total_person i{
+    font-size: 2rem;
+}
+
+.box-main .container-box .btn-resete{
+    position: absolute;
+    bottom: 5rem;
+    display: block; 
+    width: 84%;
+    height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--Very-dark-cyan);
+    text-transform: uppercase;
+    cursor: pointer;
+    background: var(--Strong-cyan);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+}
+
+
+
+

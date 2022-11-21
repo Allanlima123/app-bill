@@ -159,6 +159,75 @@ body{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
 }
 
+@media (max-width:1024px){
+    .box-main .container-box{
+        width: 75%;
+    }
+}
 
+@media (max-width:768px){
+    .box-main .container-box{
+        width: 90%;
+    }
+}
 
+@media (max-width:768px), (max-width: 425px){
+    .box-main .container-box .dados_tip form .input-box .buttons button,
+    .box-main .container-box .dados_tip form .input-box .buttons #custom{
+        width: 9.2rem;
+        height: 4rem;
+    }   
+}
 
+@media (max-width:425px), (max-width: 375px){
+    .box-main .container-box .dados_tip,
+    .box-main .container-box .result_tip{
+        width: 90%;
+    }
+
+    .box-main .container-box .dados_tip form .input-box .buttons #custom::placeholder{
+        font-size: 1.5rem;
+    }  
+}
+
+@media (max-width:425px) {
+    .box-main .container-box{
+        width: 85%;
+    }
+
+    .box-main .container-box .result_tip{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:375px) {
+    .box-main .container-box{
+        width: 85%;
+    }
+
+    .box-main .container-box .dados_tip form .input-box .buttons button,
+    .box-main .container-box .dados_tip form .input-box .buttons #custom{
+        width: 8rem;
+        height: 3.5rem;
+    }   
+
+    .box-main .container-box .result_tip{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:320px) {
+    .box-main .container-box .dados_tip form .input-box .buttons button,
+    .box-main .container-box .dados_tip form .input-box .buttons #custom{
+        width: 7rem;
+        height: 3rem;
+    }   
+
+    .box-main .container-box .dados_tip form .input-box .buttons #custom::placeholder{
+        font-size: 1.2rem;
+    }  
+
+    .box-main .container-box .result_tip{
+        margin-top: 3rem;
+    }
+}

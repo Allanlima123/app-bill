@@ -4,9 +4,10 @@ const custom = document.querySelector("#custom");
 const buttons = document.querySelectorAll(".buttons button");
 const total_person = document.querySelector("#total_person");
 const dollar_tip = document.querySelector("#dollar_tip");
+const btn_resete = document.querySelector(".btn-resete");
 
 const printValorTela = event =>{
-    event.preventDefault()
+    event.preventDefault();
 
     let porcentagemGorgeta = Number(event.target.value);
 
@@ -47,4 +48,7 @@ const printNaTela = (gorgeta, totalPessoa) =>{
 
 custom.addEventListener("input",printValorTela);
 inputNumberOfPeople.addEventListener("input", habilitarNumero);
-desabilitaNumero()
+
+btn_resete.addEventListener("click", () => window.location.reload());
+
+desabilitaNumero();

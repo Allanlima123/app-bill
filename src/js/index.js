@@ -11,16 +11,16 @@ const printValorTela = event =>{
 
     let porcentagemGorgeta = Number(event.target.value);
 
-    if(porcentagemGorgeta === 0){
-        console.log("Digite um Número Diferente de Zero");
+    if(porcentagemGorgeta <= 0){
+        console.log("Digite uma Gorgeta Maior ou diferente de 0");
         return
     }
 
     let bill = Number(inputBill.value);
-    let NumberOfPeople = Number(inputNumberOfPeople.value);
+    let numberOfPeoples = Number(inputNumberOfPeople.value);
 
-    let gorgeta = ((porcentagemGorgeta / 100) * bill) / NumberOfPeople;
-    let totalPessoa = bill / NumberOfPeople + gorgeta;
+    let gorgeta = ((porcentagemGorgeta / 100) * bill) / numberOfPeoples;
+    let totalPessoa = bill / numberOfPeoples + gorgeta;
 
     printNaTela(gorgeta, totalPessoa);
 }
@@ -32,7 +32,18 @@ const desabilitaNumero = () =>{
     });
 }
 
+const checkInputPerson = (persons) => persons <= 0 ? true : false;
+
 const habilitarNumero = () =>{
+    let numberOfPeoples = Number(inputNumberOfPeople.value);
+    let checkPeopleNumbers = checkInputPerson(numberOfPeoples);
+
+    if(checkPeopleNumbers){
+        desabilitaNumero();
+        console.log("Digite a quantidade de Pessoas!!");
+        return
+    }
+
     buttons.forEach(item => {
         item.disabled = false;
         item.addEventListener("click", printValorTela);
@@ -46,9 +57,8 @@ const printNaTela = (gorgeta, totalPessoa) =>{
     dollar_tip.innerHTML = `<i class="fa fa-usd"></i>${gorgeta.toFixed(2)}`;
 };
 
+
 custom.addEventListener("input",printValorTela);
 inputNumberOfPeople.addEventListener("input", habilitarNumero);
-
 btn_resete.addEventListener("click", () => window.location.reload());
-
 desabilitaNumero();

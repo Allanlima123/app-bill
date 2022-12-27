@@ -40,11 +40,26 @@ body{
     margin-bottom: 2rem;
 }
 
+
+
 .box-main .container-box .dados_tip form .input-box input::placeholder{
     font-size: 2rem;
     position: absolute;
     right: 1.8rem;
     top: .5rem;
+}
+
+.box-main .container-box .dados_tip form .input-box .box-bill,
+.box-main .container-box .dados_tip form .input-box .box-people{
+    position: relative;
+}
+
+.box-main .container-box .dados_tip form .input-box .box-bill .fa-usd,
+.box-main .container-box .dados_tip form .input-box .box-people .fa-user{
+    position: absolute;
+    left: 3%;
+    top: 45%;
+    font-size: 15px;
 }
 
 .box-main .container-box .dados_tip form .input-box .buttons{
@@ -197,6 +212,10 @@ body{
 
     .box-main .container-box .result_tip{
         margin-top: 2rem;
+    }
+
+    .box-main .box-title{
+        margin-top: 3rem;
     }
 }
 
